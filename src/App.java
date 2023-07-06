@@ -41,12 +41,14 @@ public class App {
             FileManager fm = new FileManager();
             fm.chooseFile();
             JOptionPane.showMessageDialog(null, "Archivo de texto seleccionado con exito");
-
-            int opciones = Integer.parseInt(JOptionPane.showInputDialog("\t¿Que quieres hacer?\n" +
+            int opciones = 0;
+            
+            do{
+                opciones = Integer.parseInt(JOptionPane.showInputDialog("\t¿Que quieres hacer?\n" +
                     "1. Mostrar palabras compuestas\n" + "2. Mostrar preguntas\n" + "3. Mostrar exclamaciones\n" +
                     "4. Mostrar abreviaciones\n" + "5. Salir\n" + "Seleccione una opcion: "));
 
-            switch (opciones) {
+                switch (opciones) {
                 case 1:
                     System.out.println("\nPalabras Compuestas");
                     System.out.print(fm.readFile(1));
@@ -64,9 +66,9 @@ public class App {
                     System.out.println(fm.readFile(4));
                     break;
                 case 5:
-                    System.exit(0);
-                    break;
-            }
+                    return;
+                }
+            }while(opciones != 5);
         } else {
             System.exit(0);
         }

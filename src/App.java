@@ -1,8 +1,8 @@
 /*
 Autores: Jhon Alejandro Martinez - 2259565
 Juan Miguel Posso Alvarado - 2259610
-Victor Manuel Hernandez-  2259000
-Nicolas Mauricio Rojas - 2259000
+Victor Manuel Hernandez-  2259520
+Nicolas Mauricio Rojas - 2259460
 
 Date: 05 -Julio- 2023
 */

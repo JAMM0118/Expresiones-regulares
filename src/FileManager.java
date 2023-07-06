@@ -1,3 +1,14 @@
+/*
+Autores:
+
+Jhon Alejandro Martínez - 2259565
+Juan Miguel Posso - 2259610
+Nicolás Mauricio Rojas - 2259460
+Víctor Manuel Hernandez - 2259520
+
+Fecha: 05 -Julio- 2023
+*/
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;

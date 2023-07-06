@@ -55,22 +55,22 @@ public class FileManager {
             while ((linea = archivo.readLine()) != null) {
                 if(opcion == 1){
                     if (!(evaluador.compuestas(linea).equals(""))) {
-                        resultadoFinal +=  evaluador.compuestas(linea) + "\n" ;
+                        resultadoFinal +=  evaluador.compuestas(linea)  ;
                     }
                 }
                 if(opcion == 2){
                     if (!(evaluador.preguntas(linea).equals(""))) {
-                        resultadoFinal +=  evaluador.preguntas(linea) + "\n" ;
+                        resultadoFinal +=  evaluador.preguntas(linea) ;
                     }
                 }
                 if(opcion == 3){
                     if (!(evaluador.admiracion(linea).equals(""))) {
-                        resultadoFinal +=  evaluador.admiracion(linea) + "\n" ;
+                        resultadoFinal +=  evaluador.admiracion(linea) ;
                     }
                 }
                 if(opcion == 4){
                     if (!(evaluador.abreviaciones(linea).equals(""))) {
-                        resultadoFinal +=  evaluador.abreviaciones(linea) + "\n" ;
+                        resultadoFinal +=  evaluador.abreviaciones(linea);
                     }
                 }
                 

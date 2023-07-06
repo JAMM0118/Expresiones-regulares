@@ -29,7 +29,7 @@ public class Evaluador {
         Matcher matcher = admiracion.matcher(texto);
         while (matcher.find()) {
             String exclamacion = matcher.group();
-            result += exclamacion;
+            result += exclamacion +"\n";
         }
         return result;
     }
@@ -45,11 +45,11 @@ public class Evaluador {
     */
     public String abreviaciones(String texto){
         String result = "";
-        Pattern abreviaciones = Pattern.compile("([A-Z]*([a-zA-Z_0-9]*))*[']([A-Z]*([a-zA-Z_0-9]*)*)");
+        Pattern abreviaciones = Pattern.compile("(([a-zA-Z_0-9]++)[']([a-z_0-9]++))");
         Matcher matcher = abreviaciones.matcher(texto);
             while (matcher.find()) {
                 String abreviacion = matcher.group();
-                result += abreviacion;
+                result += abreviacion +"\n";
             }
         return result;
     }
@@ -61,11 +61,11 @@ public class Evaluador {
     */
     public String compuestas(String texto){
         String result = "";
-        Pattern compuesta = Pattern.compile("[a-zA-Z]*-[a-zA-Z]*");
+        Pattern compuesta = Pattern.compile("[^\\p{Punct}][a-zA-Z]++[-][a-zA-Z]++[^\\p{Punct}]");
         Matcher matcher = compuesta.matcher(texto);
         while (matcher.find()) {
             String compuestas = matcher.group();
-            result += compuestas;
+            result += compuestas+"\n";
         }
         return result;
     }
@@ -82,7 +82,7 @@ public class Evaluador {
         Matcher matcher = pregunta.matcher(texto);
         while (matcher.find()) {
             String preguntas = matcher.group();
-            result += preguntas;
+            result += preguntas + "\n";
         }
         return result;
     }
